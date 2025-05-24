@@ -1,1 +1,0 @@
-scp -i roflworks.pem -r ./dist/* ec2-user@ec2-13-49-228-198.eu-north-1.compute.amazonaws.com:/var/www/roflworks.com
