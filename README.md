@@ -1,16 +1,39 @@
-# React + Vite
+# Roflworks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a small web project built with **React** and **Vite**. The site currently displays a landing page with an animated title and a dark theme.
 
-Currently, two official plugins are available:
+## About the code
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+All source files live in the `src` directory and are structured by components and pages:
 
-## Expanding the ESLint configuration
+- `components/` – standalone interface blocks such as the header and footer
+- `pages/` – application pages (currently only the home page)
+- `styles/` – styles based on **styled-components**
+- `theme.jsx` – color theme definition
+- `main.jsx` – React entry point
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project uses **react-router** for routing and **styled-components** for styling elements.
+
+## Installation
+
+1. Install [Node.js](https://nodejs.org/) (version 18 or newer is recommended).
+2. Clone the repository and navigate into it:
+   ```bash
+   git clone <repository-url>
+   cd roflworks
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+   After launch the app will be available at the address printed by Vite (typically http://localhost:5173).
+
+To build an optimized version use `npm run build`.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is distributed under the [MIT](LICENSE) license.
